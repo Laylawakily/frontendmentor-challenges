@@ -2,6 +2,9 @@
 
 This README file provides information about the **Recipe Page** project, detailing its structure, usage, and customization options.
 
+# Screenshot
+![DeskTop](./screenshot/recipe-page-desktop.png)
+![Mobile](./screenshot//recipe-page-mobile.png)
 
 ## Overview
 
