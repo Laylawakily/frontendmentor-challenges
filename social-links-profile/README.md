@@ -69,7 +69,7 @@ Wrap buttons with `<a>` tags or include custom links for functionality.
 ---
 
 ## screenshot
-![Profile-Desktop](/social-links-profile//screenshot/profile-desktop.png)
+![Profile-Desktop](/social-links-profile/screenshot/profile-desktop.png)
 ---
 
 ## Future Enhancements
