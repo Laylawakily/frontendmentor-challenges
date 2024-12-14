@@ -48,7 +48,7 @@ This project creates a simple, responsive profile card using HTML and CSS. The c
 ### Profile Image
 Replace the following line in the HTML:
 ```html
-<img  src="/social-links-profile//assets/images/avatar-jessica.jpeg" alt="Profile Picture">
+<img  src="/social-links-profile/assets/images/avatar-jessica.jpeg" alt="Profile Picture">
 ```
 Use your own image URL.
 
