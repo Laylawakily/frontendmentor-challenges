@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'MyFont', sans-serif;
+}
+
+
+body {
+  background-color: #ffffff;
+}
+
+
+.faq-header {
+  height: 250px;
+  background-image: url('./images/background-pattern-desktop.svg'); /* Replace with your background image */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+
+.faq-container {
+  background-color: #fff;
+  margin: -50px auto 30px;
+  padding: 20px;
+  max-width: 400px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.faq-star{
+ display: flex;
+ gap: 8px;
+ align-items: center;
+ margin-bottom: 10px;
+}
+
+
+.faq-item {
+  border-bottom: 1px solid #ddd;
+  padding: 15px 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.faq-item:hover {
+  background-color: #f3f4ff;
+}
+
+
+.faq-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.faq-question img {
+  width: 20px;
+  height: 20px;
+  transition: transform 0.3s ease;
+}
+
+
+.faq-item.active .faq-question img {
+  transform: rotate(180deg);
+}
+
+
+.faq-answer {
+  display: none;
+  margin-top: 10px;
+  color: #333;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.faq-item.active .faq-answer {
+  display: block;
+} 
+@font-face {
+ font-family: "MyFont";
+ src: url("./fonts/WorkSans-Italic-VariableFont_wght.ttf");
+ font-weight: normal;
+ font-style: normal;
+}
