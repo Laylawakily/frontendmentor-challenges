@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  background-image: url('./images/bg-desktop.svg');background-color: #771ae0;background-size:contain;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 1100px;
+  padding: 20px;
+}
+
+.header-logo {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+.header-logo img {
+  margin-right: 10px;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.text-section {
+  max-width: 50%;
+  text-align: left;
+}
+
+.text-section h1 {
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.text-section p {
+  font-size: 16px;
+  margin-bottom: 30px;
+  line-height: 1.6;
+  color: #ddd;
+}
+
+.text-section button {
+  background-color: #fff;
+  color: #5514B4;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 24px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: 0.3s ease;
+}
+
+.text-section button:hover {
+  background-color: #ddd;
+}
+
+.image-section {
+  position: relative;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  margin-left: 20px;
+}
+
+.image-section img {
+  max-width: 90%;
+  height: auto;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  gap: 20px;
+}
+
+.social-icons a {
+  color: #fff;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.social-icons a:hover {
+  opacity: 0.7;
+}
+
+@media (max-width: 768px) {
+  body{
+      background-image: url('./images/bg-mobile.svg');background-color: #771ae0;background-size:cover;
+  }
+  .content {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .text-section {
+      max-width: 100%;
+      text-align: center;
+      margin-bottom: 20px;
+  }
+
+  .image-section {
+      margin-left: 0;
+  }
+}

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <title> Order summary card</title>
+    <style>
+        /* Reset basic margin and padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-image: url('./images/pattern-background-desktop.svg');
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background-color: #fff;
+            width: 350px;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .header {
+            background-color: #3E4ECC;
+            /* padding: 30px 20px; */
+            position: relative;
+            height:160px;
+        }
+
+        .header img {
+            width: 100%;
+            height: 160px;
+            /* margin: auto; */
+        }
+
+        .header::after {
+            content: "";
+            background: url("https://i.imgur.com/Xf6yx9g.png") no-repeat;
+            background-size: contain;
+            position: absolute;
+            top: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 150px;
+            height: 150px;
+        }
+
+        .header h1 {
+            color: white;
+            font-size: 28px;
+            margin-top: 15px;
+        }
+
+        .order-content {
+            padding: 25px;
+            font-size: 14px;
+            color: #606060;
+        }
+        .order-content h2 {
+            color: #000000;
+            margin-bottom: 8px;
+        }
+
+        .plan-box {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: #F9FAFF;
+            border-radius: 10px;
+            padding: 15px;
+            margin: 20px 0;
+        }
+
+        .plan-box img {
+            width: 40px;
+            margin-right: 10px;
+        }
+
+        .plan-box .details {
+            text-align: left;
+        }
+
+        .plan-box .details h4 {
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 5px;
+        }
+
+        .plan-box .details p {
+            color: #888;
+            font-size: 12px;
+        }
+
+        .plan-box a {
+            color: #3E4ECC;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 12px;
+        }
+
+        .btn {
+            display: block;
+            background-color: #3E4ECC;
+            color: #fff;
+            text-decoration: none;
+            padding: 12px 0;
+            border-radius: 8px;
+            font-weight: 600;
+            margin: 15px auto;
+            width: 90%;
+            text-align: center;
+        }
+
+        .btn:hover {
+            background-color: #2C3A9E;
+        }
+
+        .cancel {
+            color: #999;
+            text-decoration: none;
+            font-size: 12px;
+            margin: 10px 0 20px;
+            display: block;
+        }
+
+        .cancel:hover {
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Top header -->
+        <div class="header">
+            <img src="./images/illustration-hero.svg" alt="Music Illustration">
+        </div>
+
+        <!-- Order Summary -->
+        <div class="order-content">
+            <h2>Order Summary</h2>
+            <p>
+                You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!
+            </p>
+
+            <div class="plan-box">
+                <div style="display: flex; align-items: center;">
+                    <img src="./images/icon-music.svg" alt="Music Icon">
+                    <div class="details">
+                        <h4>Annual Plan</h4>
+                        <p>$59.99/year</p>
+                    </div>
+                </div>
+                <a href="#">Change</a>
+            </div>
+
+            <a href="#" class="btn">Proceed to Payment</a>
+            <a href="#" class="cancel">Cancel Order</a>
+        </div>
+    </div>
+</body>
+</html>
