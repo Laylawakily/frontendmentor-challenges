@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  /* Body Styling */
+  background-color: #f8f9fd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+
+.container {
+  text-align: center;
+  width: 80%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+}
+.container p {
+  max-width: 500px;
+  text-align: center;
+  display: flex;
+  
+}
+
+
+.title h2 {
+  font-size: 2rem;
+  font-weight: 300;
+  opacity: 0.4;
+}
+
+.title h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.title h1 span {
+  color: #3c3ce5;
+}
+
+.title p {
+  color: #6c757d;
+  margin: 1rem 0 2rem 0;
+  line-height: 1.5;
+}
+
+
+.cards {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 30px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  text-align: left;
+  width: 400px;
+  height: 230px;
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card h3 {
+  color: #333;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.card p {
+  color: #6c757d;
+  line-height: 1.5;
+}
+
+.card img {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  width: 40px;
+  height: 40px;
+  opacity: 0.7;
+}
+
+.supervisor {
+  border-top: 4px solid #33b1ff;
+}
+
+.team-builder {
+  border-top: 4px solid #ff7a7a;
+}
+
+.calculator {
+  border-top: 4px solid #6688ff;
+}
+
+.karma {
+  border-top: 4px solid #ffbf00;
+}
+
+
+@media (max-width: 768px) {
+  .simple-card {      
+    display: flex;
+    flex-direction:row;
+    gap: 30px;
+  }
+  .cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+}
+
+.simple-card {      
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
