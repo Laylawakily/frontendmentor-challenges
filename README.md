@@ -30,3 +30,6 @@
 
 ## Results-summary-component
 ![product-desktop](./results-summary-component/screenshot/results-desktop.png)
+
+## Stats-preview-card
+![stats-desktop](./stats-preview-card/screenshot/stats-desktop.png)
